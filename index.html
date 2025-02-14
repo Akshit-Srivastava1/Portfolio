@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="images/Portfolio.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!---------------------------------------------------------nav---------------------------------------------------------->
+    <div class="Container">
+        <nav class="navbar">
+          <a href="#" class="logo">Portfolio.</a>
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Service</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <div class="menu"><i class='bx bx-x' onclick="closemenu()"></i></div>
+          </ul>
+          <div class="menu"><i class='bx bx-menu' onclick="openmenu()"></i></div>
+        </nav>
+        <!-------------------------------------------------Home------------------------------------------------------>
+        <div id="home">
+      <section class="home">
+        <div class="home-img">
+          <div class="img-box">
+            <div class="img-item">
+              <img src="images/me.jpg" alt="Akshit Srivastava">
+            </div>
+          </div>
+        </div>
+        <div class="me-home">
+          <div class="home-info">
+            <h1>Hi, Myself Akshit Srivastava</h1>
+            <h2>-Frontend Developer </h2>
+          </div>
+          <div class="sci">
+            <a href="https://www.linkedin.com/in/akshit-srivastava-482153277/" target="_blank"><i class='bx bxl-linkedin' ></i></a> 
+            <a href="https://www.instagram.com/vaibhav_shree_/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/Akshit-Srivastava1" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://x.com/imvaibhav_sri" target="_blank"><i class='bx bxl-twitter'></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+      <!--------------------------------------------About--------------------------------------------------->
+      <div id="About">
+      <section class="About">
+        <div class="heading">
+        <h1>About</h1>
+        </div>
+        <div class="myself">
+          <p>Hi, My name is Akshit Srivastava, a 3rd-year B.tech student majoring in Information Technology at DIT University, Dehradun. I'm passionate about coding. <br>
+            I am a self-taught developer with a strong foundation in HTML, CSS and JAVASCRIPT.</p>
+            </div>
+            <div class="ability">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br>Front-End Web Developer</li>
+                <li><span>Java</span><br>Java Developer</li>
+                <li><span>SQL</span><br>Managing Database</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>September 2023 - Current</span><br>Member - Google Developer Students Club</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>April 2018 - March 2019</span><br>Class X - 84.4%</li>
+                <li><span>April 2020 - March 2021</span><br>Class XII - 78%</li>
+                <li><span>September 2022 - Current</span><br>BTech in Information Technology - DIT University</li>
+              </ul>
+            </div>
+      </section>
+    </div>
+    </div>
+    <!---------------------------------------------------Services---------------------------------------------------->
+    <div id="Services">
+    <div class="Services">
+      <div class="Programs">
+        <h1>Service</h1>
+      </div>
+      <div class="Service-list">
+        <div>
+          <i class='bx bx-code-alt'></i>
+          <h2>Web Development</h2>
+          <p>As a Web developer, I am passionate about coding to create innovative solution with a good foundation in problem-solving. I have also earned a badge and a certificate from coursera.</p>
+          <a href="#">Learn more...</a>
+        </div>
+        <div>
+          <i class='bx bxl-java'></i>
+          <h2>Java Development</h2>
+          <p>As a Java developer, I am passionate about coding to create innovative solution. I have a preety good foundation in object-oriented programming. I have already earned a certificate from coursera on March, 2024.</p>
+          <a href="#">Learn more...</a>
+        </div>
+        <div>
+          <i class='bx bxs-data'></i>
+          <h2>SQL</h2>
+          <p>As a SQL developer, I am passionate about coding to create innovative solution. I excel at writing efficient, scalable queries to handle large datasets and complex joins. I have already earned a certificate from coursera on February, 2024. </p>
+          <a href="#">Learn more...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!------------------------------------------Portfolio----------------------------------------------------->
+    <div id="Portfolio">
+
+    </div>
+
+    <!-- ----------------------------------------Contact------------------------------------------------------>
+    <div id="Contact">
+      <div class="Contacts">
+        <h1>Contact</h1>
+        <div class="Contact-info">
+          <div class="left-side">
+            <p><i class='bx bx-navigation'></i> akshit.sri2301@gmail.com</p>
+          </div>
+          <div class="right-side">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="fd0068f9-632f-4929-ba19-2a1e26d8cd90">
+              <p><input type="text" name="name" id="name" required placeholder="Name"></p>
+              <p><input type="email" name="email" id="email" required placeholder="Your Email"></p>
+              <p><textarea name="message" id="message" required placeholder="Your Message"></textarea>
+              <p><input type="submit" value="Submit"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------Footer------------------------------------------------>
+    <div id="Footer">
+      <div class="Footer-list">
+        <p>&copy;2025 || Akshit Srivastava. All rights reserved.</p>
+      </div>
+    </div>
+    <!------------------------------------------------Javascript---------------------------------------------->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-250px";
+      }
+    </script>
+</body>
+</html>  
